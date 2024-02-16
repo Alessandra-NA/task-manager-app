@@ -1,5 +1,6 @@
 {
-  "name": "react-ts-base",
+  "homepage": "https://alessandra-na.github.io/task-manager-app",
+  "name": "task-manager",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,14 +11,23 @@
     "@types/node": "^16.18.80",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "gh-pages": "^6.1.1",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-textarea-autosize": "^8.5.3",
     "typescript": "^4.9.5",
+    "usehooks-ts": "^2.14.0",
+    "uuid": "^9.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
   }
 }
